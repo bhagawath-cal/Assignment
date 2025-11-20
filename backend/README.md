@@ -22,20 +22,25 @@ FastAPI backend for the Movie Database Platform.
 
 4. Initialize database:
    ```bash
-   python scripts/init_db.py
+   python scripts/setup_db.py
+   ```s
+
+5. Fetch movies from TMDB
+   ```bash
+   python scripts/fetch_movies_from_tmdb.py --count 100 --vote 750 --setup-db
    ```
 
-5. Run enrichment:
+6. Run enrichment:
    ```bash
    python scripts/enrich_data.py
    ```
 
-6. Ingest to Neo4j:
+7. Ingest to Neo4j:
    ```bash
    python scripts/ingest_to_neo4j.py
    ```
 
-7. Start FastAPI server:
+8. Start FastAPI server:
    ```bash
    python -m uvicorn app.main:app --reload
    ```

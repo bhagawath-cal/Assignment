@@ -35,7 +35,10 @@ cp .env.example .env
 # Edit .env with your database credentials
 
 # Initialize database
-python scripts/init_db.py
+python scripts/setup_db.py
+
+# Fetch movies from TMDB (with descriptions)
+python scripts/fetch_movies_from_tmdb.py --count 100 --vote 750 --setup-db
 
 # Run enrichment
 python scripts/enrich_data.py
