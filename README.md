@@ -127,7 +127,9 @@ python scripts/ingest_to_neo4j.py
 │   │   ├── database.py      # Postgres connection
 │   │   └── routers/         # API routes
 │   ├── scripts/
-│   │   ├── init_db.py       # Initialize Postgres schema + seed
+│   │   ├── init_db.py       # Initialize Postgres schema + seed (Manual setup - deprecated)
+│   │   ├── setup_db.py      # Initialize database schema
+│   │   ├── fetch_movies_from_tmdb.py  # Gets movies from TMDB
 │   │   ├── enrich_data.py  # Enrichment script
 │   │   └── ingest_to_neo4j.py  # Neo4j ingestion
 │   ├── requirements.txt
