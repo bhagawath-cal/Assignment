@@ -3,7 +3,7 @@ LangGraph agent for natural language queries against Neo4j.
 
 This agent requires:
 - LangChain dependencies installed
-- OpenAI API key configured in .env file
+- Deepseek API key configured in .env file
 """
 from typing import TypedDict, Annotated, Sequence
 import operator
@@ -32,12 +32,12 @@ def create_agent():
     """
     Create a LangGraph agent with Neo4j query capabilities.
     
-    Requires OpenAI API key to be configured in .env file.
+    Requires Deepseek API key to be configured in .env file.
     """
-    # Check if OpenAI API key is configured
+    # Check if Deepseek API key is configured
     if not settings.openai_api_key or not settings.openai_api_key.strip():
         raise ValueError(
-            "OpenAI API key is required but not configured.\n"
+            "Deepseek API key is required but not configured.\n"
             "Please set OPENAI_API_KEY in your .env file."
         )
     
@@ -51,7 +51,7 @@ def create_agent():
         )
     except Exception as e:
         raise RuntimeError(
-            f"Failed to initialize OpenAI LLM: {e}\n"
+            f"Failed to initialize Deepseek LLM: {e}\n"
             "Please check your OPENAI_API_KEY in .env file."
         )
     

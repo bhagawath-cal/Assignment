@@ -188,7 +188,7 @@ NEO4J_PASSWORD=your_password
 API_HOST=localhost
 API_PORT=8000
 
-# Optional: OpenAI API Key (for LangGraph agent)
+# Optional: Deepseek API Key (for LangGraph agent)
 # OPENAI_API_KEY=your_api_key_here
 ```
 
@@ -198,13 +198,13 @@ The project includes a LangGraph agent that can answer natural language question
 
 ### Setup
 
-1. **Optional: Set OpenAI API Key** (for full LLM capabilities):
+1. **Optional: Set Deepseek API Key** (for full LLM capabilities):
    ```bash
    # Add to backend/.env
    OPENAI_API_KEY=your_api_key_here
    ```
    
-   **Note:** The agent works without an API key using a templated approach, but works better with an OpenAI API key.
+   **Note:** The agent works without an API key using a templated approach, but works better with an Deepseek API key.
 
 ### Usage
 

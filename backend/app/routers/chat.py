@@ -14,7 +14,7 @@ _HumanMessage_cache = None
 _AIMessage_cache = None
 
 def get_agent():
-    """Lazy import of the agent - requires LangChain and OpenAI API key."""
+    """Lazy import of the agent - requires LangChain and Deepseek API key."""
     global _agent_cache, _AgentState_cache, _HumanMessage_cache, _AIMessage_cache
     
     if _agent_cache is not None:

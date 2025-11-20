@@ -19,7 +19,7 @@ class Settings(BaseSettings):
     api_host: str = "localhost"
     api_port: int = 8000
     
-    # Optional: OpenAI API Key for LangGraph agent
+    # Optional: Deepseek API Key for LangGraph agent
     openai_api_key: str = ""
     tmdb_api_key: str = ""  # Optional: for fetching movie data from TMDB
     
