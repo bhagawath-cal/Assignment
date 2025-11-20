@@ -23,7 +23,7 @@ FastAPI backend for the Movie Database Platform.
 4. Initialize database:
    ```bash
    python scripts/setup_db.py
-   ```s
+   ```
 
 5. Fetch movies from TMDB
    ```bash
