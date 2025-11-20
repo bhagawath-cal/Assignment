@@ -1,0 +1,28 @@
+{
+  "name": "movie-database-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "quasar dev",
+    "build": "quasar build",
+    "lint": "eslint --ext .js,.ts,.vue src"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.9",
+    "axios": "^1.6.2",
+    "quasar": "^2.14.1",
+    "vue": "^3.4.15",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@quasar/app-vite": "^2.4.0",
+    "@types/node": "^20.10.5",
+    "autoprefixer": "^10.4.16",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">= 18.0.0",
+    "npm": ">= 8.0.0"
+  }
+}
